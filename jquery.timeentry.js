@@ -821,7 +821,9 @@
 			if (input.setSelectionRange) { // Mozilla
 				try { // Chrome prevent errors
 					input.setSelectionRange(start, end);
-				} catch {}
+				} catch (err) {
+
+				}
 			}
 			else if (input.createTextRange) { // IE
 				var range = input.createTextRange();
